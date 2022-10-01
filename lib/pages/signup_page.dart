@@ -103,7 +103,7 @@ class _SignUpState extends State<SignUp> {
                     _countryCode = value.dialCode;
                   },
                   inputBorder: InputBorder.none,
-                  initialValue: PhoneNumber(isoCode: 'NG'),
+                  initialValue: PhoneNumber(isoCode: 'IN'),
                   errorMessage: 'Invalid Number',
                   textFieldController: _phoneController,
                   selectorConfig: const SelectorConfig(
