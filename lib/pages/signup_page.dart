@@ -103,7 +103,7 @@ class _SignUpState extends State<SignUp> {
                     _countryCode = value.dialCode;
                   },
                   inputBorder: InputBorder.none,
-                  initialValue: PhoneNumber(isoCode: 'IN'),
+                  initialValue: PhoneNumber(isoCode: 'NG'),
                   errorMessage: 'Invalid Number',
                   textFieldController: _phoneController,
                   selectorConfig: const SelectorConfig(
@@ -172,7 +172,7 @@ class _SignUpState extends State<SignUp> {
                         timeout: const Duration(seconds: 25),
                         forceResendingToken: _resendToken,
                         codeAutoRetrievalTimeout: (String verificationId) {
-
+                          verificationID = verificationId;
                         });
                   }
                 },
